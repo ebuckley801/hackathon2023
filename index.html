@@ -3,6 +3,11 @@
   <head>
     <link href="./Resources/style.css" type="text/css"rel="stylesheet">
     <title>Not Pineapple</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
@@ -10,11 +15,10 @@
     <p class = "input"><label for="file" style="cursor: pointer;">Click here to upload image and determine pineappleness</label></p>
     <p><img id="output" width="200" /></p>
 
-    <script>
+    <script class = "image">
       var loadFile = function(event) {
         var image = document.getElementById('output');
-        image.style.height = '200px';
-        image.style.length = '100px';
+        image.classList.add("picture");
         image.src = URL.createObjectURL(event.target.files[0]);
       };
     </script>
