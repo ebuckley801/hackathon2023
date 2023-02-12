@@ -50,9 +50,13 @@ header{
     top: 10px;
 }
 
-.photo{
+.photo {
     position: relative;
     top: 100px;
     display:inline;
 }
 
+.photo img{
+    width: 10%;
+    height: auto;
+}
