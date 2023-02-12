@@ -3,7 +3,7 @@
     font-size: 50px;
     color: white;
     text-align: center;
-
+    padding-top: 50px;
 }
 
 body{
@@ -17,3 +17,32 @@ body{
     margin-right: auto;
     width: 50%;
 }
+
+header a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  header a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  header a img, header a{
+    width: 30px;
+    height: 30px;
+  }
+  header{
+    position: fixed;
+    top: 10px;
+  }
