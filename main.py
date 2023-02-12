@@ -89,8 +89,9 @@ model = models.load_model('image_classifier.model')
 print("Please select a file option to check against the algorithm")
 choice = input()
 img = cv.imread("./Resources"+choice)
-print("There is at most a 33% chance it is a pineapple.")
-print("There is a 67% chance there is not a pineapple.")
+print("There is a 100% chance it could be a pineapple, but probably not considering our stellar patent-pending computer vision technology ")
+print(" and the submission requirements of the README.")
+
 img = cv.cvtColor(img,cv.COLOR_BGR2RGB)
 
 plt.imshow(img,cmap=plt.cm.binary)
