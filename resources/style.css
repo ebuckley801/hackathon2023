@@ -2,4 +2,10 @@
     font-family: 'Times New Roman', Times, serif;
     background-color: black;
     color: white;
+    
+}
+
+body{
+    background-image: url(./trees.jpg);
+    background-size: cover;
 }
