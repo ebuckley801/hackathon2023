@@ -1,9 +1,11 @@
-.input{
+*{
     font-family: 'Kaushan Script';
-    font-size: 50px;
     color: white;
+}
+.input{
     text-align: center;
     padding-top: 50px;
+    font-size: 50px;
 }
 
 body{
@@ -26,23 +28,31 @@ header a{
     text-decoration: none;
     font-size: 17px;
 
-  }
+}
   
-  header a:hover {
+header a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  header a.active {
+}
+
+header a.active {
     background-color: #04AA6D;
     color: white;
-  }
+}
 
-  header a img, header a{
+header a img, header a{
     width: 30px;
     height: 30px;
-  }
-  header{
+}
+
+header{
     position: fixed;
     top: 10px;
-  }
+}
+
+.photo{
+    position: relative;
+    top: 100px;
+    display:inline;
+}
+
