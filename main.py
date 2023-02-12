@@ -30,14 +30,14 @@ for i in range(16):
 #building and training the model
 #reducing amount of images in the neural network
 #could train on first 5000 for training images and labels
-training_images = training_images[:20000]
-training_labels = training_labels[:20000]
+training_images = training_images[:50000]
+training_labels = training_labels[:50000]
 testing_images = testing_images[:4000]
 testing_labels = testing_labels[:4000]
 
 
 #training the model
-'''
+
 
 
 #watch neural networks simply explained video
@@ -80,12 +80,17 @@ print(f"Accuracy: {accuracy}")
 model.save('image_classifier.model')
 
 #model = models.load_model()
-'''
+
+
 #now going to take images from internet and classify them
 model = models.load_model('image_classifier.model')
 
 #using pixabay.com
-img = cv.imread('horse.jpg')
+print("Please select a file option to check against the algorithm")
+choice = input()
+img = cv.imread("./Resources"+choice)
+print("There is at most a 33% chance it is a pineapple.")
+print("There is a 67% chance there is not a pineapple.")
 img = cv.cvtColor(img,cv.COLOR_BGR2RGB)
 
 plt.imshow(img,cmap=plt.cm.binary)
