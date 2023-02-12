@@ -1,11 +1,19 @@
 .input{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: black;
+    font-family: 'Kaushan Script';
+    font-size: 50px;
     color: white;
-    
+    text-align: center;
+
 }
 
 body{
     background-image: url(./trees.jpg);
     background-size: cover;
+}
+
+.picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
