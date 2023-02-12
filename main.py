@@ -1,11 +1,7 @@
 #install numpy
 import matplotlib.pyplot as plt
 import numpy as np
-import tensorflow
-#import opencv-python
 import cv2 as cv
-#opencv-python
-#from tensorflow.keras import datasets, layers, models
 from tensorflow.python.keras import layers, models
 from keras import datasets
 
